@@ -486,7 +486,7 @@ var getDimensionView = () => {
     }
     let buyG = () => {
         Sound.playClick();
-        if (AntiDim[7].count > getGcost()) {
+        if (AntiDim[7].count >= getGcost()) {
             Antimatter = bf(10);
             AntiDimReset();
             dimboost = bf(0);
